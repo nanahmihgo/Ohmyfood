@@ -1,5 +1,61 @@
-*
-{
-    font-family: shrikand, roboto, arial;
-    color: black;
+/*MOBILE*/
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("Shrikhand-Regular.ttf");
 }
+/*VARIABLES*/
+/*INDEX*/
+* {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*PAGE*/
+body {
+  margin: auto;
+  width: 414px;
+  text-align: center;
+}
+
+header {
+  width: 260px;
+  height: 250px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Shrikhand-Regular";
+  font-size: 1.6em;
+  width: 100%;
+  height: 40px;
+  /* text-align: center; */
+}
+
+footer {
+  text-align: start;
+}
+
+/*Tablette*/
+@media all and (min-width: 600px) {
+  body {
+    margin: auto;
+    width: auto;
+  }
+
+  h1 {
+    font-family: "Shrikhand-Regular";
+    font-size: 1.6em;
+    width: 100%;
+    height: 40px;
+  }
+}
+
+/*# sourceMappingURL=styleomf.css.map */
