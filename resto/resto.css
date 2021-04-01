@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("../police/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../police/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../police/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../police/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../police/Roboto-Bold.ttf");
+}
+body {
+  margin: auto;
+  width: 360px;
+}
+
+.header__entete {
+  width: 100%;
+  height: 300px;
+}
+.header__entete .header__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  padding-top: 2%;
+}
+.header__entete .header__content .header__title {
+  font-family: "Shrikhand-Regular";
+  font-size: 1.6em;
+  padding-left: 20%;
+}
+.header__entete .header__content .header__link {
+  font-size: 1.2em;
+  color: black;
+}
+.header__entete .header__img {
+  width: 100%;
+  height: 250px;
+}
+.header__entete .header__img img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 1000px;
+  background-color: #e8f9f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 40px 40px 0 0;
+  margin-top: -15%;
+  position: relative;
+  overflow: hidden;
+}
+section .section__bigtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  font-family: "Shrikhand-Regular";
+  font-size: 1.1em;
+  padding-top: 0;
+  margin-top: 7%;
+}
+section .section__bigtitle .section__heart {
+  text-decoration: none;
+  margin-right: 5%;
+}
+section .section__bigtitle .section__heart i {
+  color: black;
+  font-size: 1.3em;
+}
+section .section__names {
+  width: 10%;
+  height: 25px;
+  margin-right: 80%;
+  margin-top: 7%;
+  margin-bottom: 1%;
+  font-family: "Roboto-Light";
+  font-size: 0.9em;
+  border-bottom: 1px solid #99E2D0;
+}
+section .section__boxes {
+  font-family: "Roboto-Regular";
+  margin-top: 3%;
+  padding: 0;
+  width: 90%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section .section__boxes .txt {
+  width: 72%;
+  white-space: nowrap;
+  margin: 0 0 2% 5%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section .section__boxes .txt h4 {
+  margin: 0;
+}
+section .section__boxes .txt p {
+  height: 20px;
+  margin: 0;
+  font-size: 0.85em;
+  padding-top: 2%;
+}
+section .section__boxes .prix {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 0 0 2.5% 10%;
+  transition: transform 300ms ease-in-out;
+}
+section .section__boxes .section__btnbox {
+  width: 17%;
+  height: 100%;
+  margin-left: 7.5%;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 300ms ease-in-out;
+}
+section .section__boxes .section__btnbox button {
+  height: 1.4em;
+  width: 1.4em;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .section__boxes:hover .prix {
+  transform: translate(-200%, 0);
+}
+section .section__boxes:hover .section__btnbox {
+  transform: translate(-100%, 0);
+  cursor: pointer;
+}
+section .section__boxes:hover .section__btnbox button {
+  cursor: pointer;
+}
+section .section__btnsend {
+  width: 50%;
+}
+section .section__btnsend .section__submit {
+  width: 100%;
+  height: 50px;
+  background-color: #FF79DA;
+  color: white;
+  border: 1px solid #FF79DA;
+  border-radius: 30px;
+  font-family: "Roboto-Regular";
+  margin-top: 12%;
+  transition: background-color 200ms ease-out;
+}
+section .section__btnsend .section__submit:hover {
+  background-color: #f8a4e3;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  text-align: start;
+  background-color: black;
+}
+footer .footer__link {
+  color: white;
+  width: 90%;
+  height: 165px;
+  margin: auto;
+  padding: 0;
+  font-size: 0.85em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer__link .footer__link--title {
+  font-family: "Shrikhand-Regular";
+  font-size: 1.1em;
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+footer .footer__link .footer__link--content {
+  font-family: "Roboto-Light";
+  color: white;
+  text-decoration: none;
+  width: 90%;
+}
+footer .footer__link .footer__link--content .footer__link--1 {
+  margin-right: 6%;
+  padding-left: 1%;
+}
+footer .footer__link .footer__link--content .footer__link--2 {
+  margin-right: 5%;
+}
+
+/*# sourceMappingURL=resto.css.map */

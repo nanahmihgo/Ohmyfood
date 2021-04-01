@@ -2,7 +2,7 @@
   "name": "p3",
   "version": "1.0.0",
   "description": "\"Sass for P3\"",
-  "main": "index.js",
+  "main": "OhMyFood.js",
   "scripts": {
     "sass": "sass --watch ./styleomf.scss:./styleomf.css"
   },

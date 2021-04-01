@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8" />
 		<link rel="stylesheet" href="styleomf.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>ohmyfood</title>
     </head>
@@ -16,52 +17,77 @@
     </header>
 
     <nav>
-        <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
-        <h3>Réservez le menu qui vous convient</h3>
-        <p>Découvrez des restaurants d'exceptions, sélectionnez par nos soins.</p>
-        <a href="#restaurants">Explorez nos restaurants</a>
+        <div class="nav__geo">
+            <i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p>
+        </div>
+        <h3 class="nav__title">Réservez le menu qui vous convient</h3>
+        <p class="nav__txt">Découvrez des restaurants d'exceptions, sélectionnez par nos soins.</p>
+        <a class="nav__link" href="#restaurants">Explorez nos restaurants</a>
     </nav>
 
     <aside>
-        <h3>Fonctionnement</h3>
-        <p><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
-        <p><i class="fas fa-list-ul"></i>Composez votre menu</p>
-        <p><i class="fas fa-store"></i>Dégustez au restaurant</p>
+        <h3 class="aside__title">Fonctionnement</h3>
+        <h4 class="aside__box">
+            <span class="aside__chiffre">1</span>
+            <span class="aside__i"><i class="fas fa-mobile-alt"></i></span>
+            <span class="aside__txt">Choisissez un restaurant</span>
+        </h4>
+        <h4 class="aside__box">
+            <span class="aside__chiffre">2</span>
+            <span class="aside__i"><i class="fas fa-list-ul"></i></span>
+            <span class="aside__txt">Composez votre menu</span>
+        </h4>
+        <h4 class="aside__box aside__box--modif">
+            <span class="aside__chiffre">3</span>
+            <span class="aside__i"><i class="fas fa-store"></i></span>
+            <span class="aside__txt">Dégustez au restaurant</span>
+        </h4>
     </aside>
 
     <section>
-        <h3 id="restaurants">Restaurants</h3>
-        
-        <div class="r1">
-            <h4>La palette du gout</h4>
-            <p>Ménilmontant</p>
-            <i class="far fa-heart"></i>
+        <h3 class="section__bigtitle" id="restaurants">Restaurants</h3>
+        <div class="section__box">
+            <a href="resto/r1.html" class="section__box--link"><img src="imgR/paletteS.jpg" class="section__box--img" alt="la palette du gout"/></a>
+            <div class="section__box--txt">
+                <h4 class="section__box--title">La palette du gout</h4>
+                <p class="section__box--lieu">Ménilmontant</p>
+                <span class="section__box--i"><i class="far fa-heart"></i></span>
+            </div>    
         </div>
-        <div class="r2">
-            <h4>La note enchantée</h4>
-            <p>Charonne</p>
-            <i class="far fa-heart"></i>
+        <div class="section__box">
+            <a href="resto/r2.html" class="section__box--link"><img src="imgR/noteS.jpg" class="section__box--img" alt="la note enchantée"/></a>
+            <div class="section__box--txt">
+                <h4 class="section__box--title">La note enchantée</h4>
+                <p class="section__box--lieu">Charonne</p>
+                <span class="section__box--i"><i class="far fa-heart"></i></span>
+            </div>    
         </div>
-        <div class="r3">
-            <h4>A la française</h4>
-            <p>Cité rouge</p>
-            <i class="far fa-heart"></i>
+        <div class="section__box">
+            <a href="resto/r3.html" class="section__box--link"><img src="imgR/françaiseS.jpg" class="section__box--img" alt="A la française"/></a>
+            <div class="section__box--txt">
+                <h4 class="section__box--title">A la française</h4>
+                <p class="section__box--lieu">Cité rouge</p>
+                <span class="section__box--i"><i class="far fa-heart"></i></span>
+            </div>    
         </div>
-        <div class="r4">
-            <h4>Le délice des sens</h4>
-            <p>Folie-Méricourt</p>
-            <i class="far fa-heart"></i>
+        <div class="section__box">
+            <a href="resto/r4.html" class="section__box--link"><img src="imgR/deliceS.jpg" class="section__box--img" alt="le délice des sens"/></a>
+            <div class="section__box--txt">
+                <h4 class="section__box--title">Le délice des sens</h4>
+                <p class="section__box--lieu">Folie- méricourt</p>
+                <span class="section__box--i"><i class="far fa-heart"></i></span>
+            </div>    
         </div>
     </section>
 
     <footer>
-        <ul>
-            <li><h4>ohmyfood</h4></li>
-            <li><i class="fas fa-utensils"></i><a href="proposer">proposer un restaurant</a></li>
-            <li><i class="fas fa-hands-helping"></i><a href="partenaire">Devenir partenaire</a></li>
-            <li><a href="mentions">Mentions légales</a></li>
-            <li><a href="contact">Contact</a></li>
-        </ul>
+        <div class="footer__link">
+            <h4 class="footer__link--title">ohmyfood</h4>
+            <a href="proposer" class="footer__link--content"><span class="footer__link--1"><i class="fas fa-utensils"></i></span>proposer un restaurant</a>
+            <a href="partenaire" class="footer__link--content"><span class="footer__link--2"><i class="fas fa-hands-helping"></i></span>Devenir partenaire</a>
+            <a href="mentions" class="footer__link--content">Mentions légales</a>
+            <a href="contact" class="footer__link--content">Contact</a>
+        <div>
     </footer>
 
     </body>
