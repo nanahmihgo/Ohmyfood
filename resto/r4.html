@@ -4,85 +4,101 @@
 
     <head>
         <meta charset="utf-8" />
-		<link rel="stylesheet" href="styleomf.css" />
+		<link rel="stylesheet" href="resto.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>ohmyfood</title>
     </head>
  
     <body>
 
-    <header>
-        <h1><a href="../OhMyFood.html"><i class="fas fa-arrow-left"></i></a>ohmyfood</h1>
-        <p>"IMG ICI"</p>
-    </header>
+        <header>
+            <div class="header__content">
+                <a href="../OhMyFood.html" class="header__link"><i class="fas fa-arrow-left"></i></a>
+                <h1 class="header__title">ohmyfood</h1>
+            </div>    
+            <div class="header__img">
+                <img src="../imgR/deliceS.jpg" alt="le délice des sens"/>
+            </div>
+        </header>
+    
 
-    <section>
-        <h2>Le délice des sens<i class="far fa-heart"></i></h2>
-        <div class="entree">
-            <h3>ENTREES</h3>
-                <form method="post" action="doc.js"></form>
+        <section>
+
+            <div class="section__bigtitle">
+                <h2>Le délice des sens</h2>
+                <a href="mesfavoris.doc" i class="far fa-heart"></i></a>
+            </div>
+
+            <h3 class="section__name">ENTREES</h3>
+
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Tartare de thon</h4>
                     <p>Assaisonné au yuzu<span class="prix">25€</span></p>
                     <input type="checkbox" checked />
                 </form>
-                <form method="post" action="doc.js"></form>
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Bouchée de homard croustillant</h4>
                     <p>Et sa farandole de petits légumes<span class="prix">35€</span></p>
                     <input type="checkbox" checked />
                 </form>
-                <form method="post" action="doc.js"></form>
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Velouté de cèpes</h4>
                     <p>Aux truffes<span class="prix">20€</span></p>
                     <input type="checkbox" checked />
                 </form>
-        </div>
-        <div class="plats">
-            <h3>PLATS</h3>
-                <form method="post" action="doc.js"></form>
+
+            <h3 class="section__name">PLATS</h3>
+
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Poulet rôti aux herbes de Provence</h4>
                     <p>Et sa crème de truffe<span class="prix">40€</span></p>
                     <input type="checkbox" checked />
                 </form>
-                <form method="post" action="doc.js"></form>
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Langouste rôtie</h4>
                     <p>Et ses légumes de saison<span class="prix">35€</span></p>
                     <input type="checkbox" checked />
                 </form>
-                <form method="post" action="doc.js"></form>
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Côte de boeuf Angus</h4>
                     <p>Et sa purée de panais<span class="prix">44€</span></p>
                     <input type="checkbox" checked />
                 </form>
-        </div>
-        <div class="desserts">
-            <h3>DESSERTS</h3>
-                <form method="post" action="doc.js"></form>
+        
+            <h3 class="section__name">DESSERTS</h3>
+            
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Farandole de desserts</h4>
                     <p>Du chef<span class="prix">18€</span></p>
                     <input type="checkbox" checked />
-                </form>
-                <form method="post" action="doc.js"></form>
+                </form> 
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Crème brulée</h4>
-                    <p>Revisité<span class="prix">22€</span></p>
+                    <p>Revisitée<span class="prix">22€</span></p>
                     <input type="checkbox" checked />
                 </form>
-                <form method="post" action="doc.js"></form>
+                <form method="post" class="section__boxes" action="doc.js">
                     <h4>Tiramisu</h4>
                     <p>À la noisette<span class="prix">23€</span></p>
                     <input type="checkbox" checked />
                 </form>
-        </div>
-    </section>
+                
+                <form method="post" class="section__valid" action="doc.js">
+                    <input type="submit" class="section__submit" value="Commander"/>
+                </form>
 
-    <footer>
-        <ul>
-            <li><h4>ohmyfood</h4></li>
-            <li><a href="proposer">proposer un restaurant</a></li>
-            <li><a href="partenaire">Devenir partenaire</a></li>
-            <li><a href="mentions">Mentions légales</a></li>
-            <li><a href="contact">Contact</a></li>
-        </ul>
-    </footer>
+        </section>
+
+        <footer>
+            <div class="footer__link">
+                <h4 class="footer__link--title">ohmyfood</h4>
+                <a href="proposer" class="footer__link--content"><span class="footer__link--1"><i class="fas fa-utensils"></i></span>proposer un restaurant</a>
+                <a href="partenaire" class="footer__link--content"><span class="footer__link--2"><i class="fas fa-hands-helping"></i></span>Devenir partenaire</a>
+                <a href="mentions" class="footer__link--content">Mentions légales</a>
+                <a href="contact" class="footer__link--content">Contact</a>
+            <div>
+        </footer>
 
     </body>
     
