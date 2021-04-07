@@ -25,14 +25,16 @@
 
         <section>
 
-            <div class="section__bigtitle">
+            <div class="section__restoname">
                 <h2>La palette du gout</h2>
                 <div class="section__heart">
                     <a href="mesfavoris.doc"><i class="far fa-heart"></i></a>
                 </div>    
             </div>
 
-            <h3 class="section__names">ENTREES</h3>
+            <div class="section__bloc">
+
+                <h3 class="section__names">ENTREES</h3>
 
                 <form method="post" class="section__boxes" action="doc.js">
                     <article class="txt">
@@ -64,8 +66,11 @@
                         <button type="submit"><i class="fas fa-check"></i></button>
                     </div>
                 </form>
+            </div>
 
-            <h3 class="section__names">PLATS</h3>
+            <div class="section__bloc">
+
+                <h3 class="section__names">PLATS</h3>
 
                 <form method="post" class="section__boxes" action="doc.js">
                     <article class="txt">
@@ -78,10 +83,10 @@
                     </div>
                 </form>
                 <form method="post" class="section__boxes" action="doc.js">
-                    <article class="txt">
+                    <div class="txt">
                         <h4>Parmentier de queue de boeuf</h4>
                         <p>À la truffe noire sur sa purée de panais</p>
-                    </article>
+                    </div>
                     <div class="prix">44€</div>
                     <div class="section__btnbox">
                         <button type="submit"><i class="fas fa-check"></i></button>
@@ -97,8 +102,12 @@
                         <button type="submit"><i class="fas fa-check"></i></button>
                     </div>
                 </form>
+
+            </div>
+
+            <div class="section__bloc">
         
-            <h3 class="section__names">DESSERTS</h3>
+                <h3 class="section__names">DESSERTS</h3>
             
                 <form method="post" class="section__boxes" action="doc.js">
                     <article class="txt">
@@ -130,6 +139,7 @@
                         <button type="submit"><i class="fas fa-check"></i></button>
                     </div>
                 </form>
+            </div>
                 
                 <form method="post" class="section__btnsend" action="doc.js">
                     <input type="submit" class="section__submit" value="Commander"/>

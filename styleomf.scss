@@ -32,6 +32,14 @@ $purple: #9356DC;
 $pink: #FF79DA;
 $cyan: #99E2D0;
 
+@mixin bgcolor ($color: $cyan){
+    background-color: lighten($cyan, 20%);
+}
+
+@mixin bgcolor2($color: $purple){
+    background-color: lighten($purple, 35%);
+}
+
 
 body {
     margin: auto;
@@ -48,12 +56,6 @@ h1 {
     padding-top: 2%;
 }
 
-// p {
-//     font-family: $robotolight;
-//     margin: 0;
-// }
-
-
 nav {
     width: 100%;
     height: 270px;
@@ -61,8 +63,8 @@ nav {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: $cyan;
     font-family: $roboto;
+    @include bgcolor;
     .nav__geo {
         width: 130px;
         height: 40px;
@@ -123,7 +125,7 @@ aside {
         margin: 3%;
         width: 86%;
         height: 65px;
-        background-color: $cyan;
+        @include bgcolor;
         border-radius: 20px;
         display: flex;
         flex-direction: row;
@@ -151,7 +153,7 @@ aside {
             padding-left: 10%;
         }
         &--modif{
-            background-color: $pink;
+            @include bgcolor2;
             .aside__i{
                 color: $purple;
             }
@@ -162,7 +164,7 @@ aside {
 section {
     width: 100%;
     height: 1150px;
-    background-color: $cyan;
+    @include bgcolor;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -257,7 +259,8 @@ footer{
 
 
 
-@media all and (min-width: 600px)
+                /*Tablette*/
+@media all and (min-width: 600px) and (max-width: 1024px)
 {
 
 body {
@@ -271,5 +274,166 @@ h1 {
     width: 100%;
     height: 40px;
 }
+
+nav{
+    height: 300px;
+    .nav__link{
+        margin-top: 5%;
+    }
+}
+
+
+aside {
+    .aside__title {
+
+    }
+    .aside__box {
+        width: 60%;
+        margin: auto;
+    }    
+}
+
+section {
+    height: 1200px;
+        .section__bigtitle{
+            padding-top: 6%;;
+        }
+        .section__box{
+            width: 60%;
+            align-items: center;
+            // .section__box--txt{
+            //     .section__box--title{
+            //         margin: 0;
+            //         font-weight: bold;
+            //     }
+            //     .section__box--lieu{
+            //         margin: 0;
+            //     }
+            //     .section__box--i{
+            //     margin: 0;
+            //     }
+            // }
+        }    
+}
+
+footer{
+    .footer__link{
+        .footer__link--title{
+            font-size: 1.3em;
+        }
+        .footer__link--content{
+            width: 60%;
+        }          
+    }
+}
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1980px)
+{
+    body{
+        min-width: 1024px;
+        max-width: 1980px;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: start;
+        padding: 2% 0 1% 2%;
+    }
+    
+    nav {
+        height: 200px;
+        align-items: start;
+        .nav__geo {
+            margin: auto;
+
+        }
+        .nav__title {
+            width: 100%;
+            padding: 0;
+        }
+        .nav__txt {
+            width: 100%;
+            padding: 1% 0 0 0;
+        }
+        .nav__link {
+            margin: auto;
+        }
+    }    
+    
+    
+    aside {
+        height: 150px;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .aside__title {
+            width: 100%;
+            margin: 0 0 0 2%;
+            padding: 4% 0 1% 0;
+        }
+        .aside__box {
+            margin: 1% 0 0 2.5%;
+            width: 30%;
+            height: 65px;
+        }    
+    }
+    
+    section {
+        width: 100%;
+        height: 670px;
+        @include bgcolor;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 6% 0 0 0;
+        .section__bigtitle{
+            width: 90%;
+            padding: 0;
+            margin: 0;
+            font-family: $roboto;
+            font-weight: bold;
+        }
+        .section__box{
+            margin: auto;
+            width: 35%;
+            height: 240px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border-radius: 15px;
+        }    
+    }
+    
+    footer{
+        width: 100%;
+        height: 200px;
+        text-align: start;
+        background-color: rgba(32, 32, 32, 0.877);
+        .footer__link{
+            width: 20%;
+            margin: 0 0 0 2%;
+            .footer__link--title{
+                font-size: 1.3em;
+            }
+            .footer__link--content{
+                font-family: $robotolight;
+                color: white;
+                text-decoration: none;
+                width: 90%;
+                .footer__link--1{
+                    margin-right: 6%;
+                    padding-left: 1%;
+                }
+                .footer__link--2{
+                    margin-right: 5%;
+                }
+            }          
+        }
+    }
+    
 
 }
