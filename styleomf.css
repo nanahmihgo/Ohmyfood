@@ -164,16 +164,16 @@ section .section__box {
   flex-wrap: wrap;
   border-radius: 15px;
 }
-section .section__box .section__box--link {
+section .section__box .section__boxlink {
   width: 100%;
   height: 70%;
 }
-section .section__box .section__box--img {
+section .section__box .section__boximg {
   width: 100%;
   height: 100%;
   border-radius: 15px 15px 0 0;
 }
-section .section__box .section__box--txt {
+section .section__box .section__boxtxt {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,15 +184,48 @@ section .section__box .section__box--txt {
   margin: auto;
   font-family: "Roboto-Regular";
 }
-section .section__box .section__box--txt .section__box--title {
+section .section__box .section__boxtxt .section__boxtitle {
   margin: 0;
   font-weight: bold;
 }
-section .section__box .section__box--txt .section__box--lieu {
+section .section__box .section__boxtxt .section__boxlieu {
   margin: 0;
 }
-section .section__box .section__box--txt .section__box--i {
+section .section__box .section__boxtxt .section__boxheart {
+  width: 1%;
+  height: 21%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
+  border: 0 solid transparent;
+  background-color: transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+section .section__box .section__boxtxt .section__boxheart .heartwrap {
+  width: 25px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .section__box .section__boxtxt .section__boxheart .heartwrap i {
+  position: relative;
+  background-color: transparent;
+  font-size: 1em;
+}
+section .section__box .section__boxtxt .section__boxheart .heartwrap .section__box--i {
+  position: absolute;
+  color: pink;
+  opacity: 0;
+  transform: opacity;
+  font-size: 1.05em;
+}
+section .section__box .section__boxtxt .section__boxheart .heartwrap .section__box--i:hover {
+  opacity: 0.8;
+  transition: opacity 500ms;
 }
 
 footer {
@@ -233,7 +266,6 @@ footer .footer__link .footer__link--content .footer__link--2 {
   margin-right: 5%;
 }
 
-/*Tablette*/
 @media all and (min-width: 600px) and (max-width: 1024px) {
   body {
     margin: auto;
@@ -327,7 +359,7 @@ footer .footer__link .footer__link--content .footer__link--2 {
 
   section {
     width: 100%;
-    height: 670px;
+    height: 700px;
     background-color: #e8f9f5;
     flex-direction: row;
     flex-wrap: wrap;
@@ -338,12 +370,12 @@ footer .footer__link .footer__link--content .footer__link--2 {
   section .section__bigtitle {
     width: 90%;
     padding: 0;
-    margin: 0;
+    margin: 2% 6% 0 0;
     font-family: "Roboto-Regular";
     font-weight: bold;
   }
   section .section__box {
-    margin: auto;
+    margin: 2%;
     width: 35%;
     height: 240px;
     background-color: white;
