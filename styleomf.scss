@@ -40,11 +40,46 @@ $cyan: #99E2D0;
     background-color: lighten($purple, 35%);
 }
 
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
-body {
+@keyframes page{
+    from {
+        transform: translateY(-9999px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 10px $cyan solid;
+    border-bottom: 10px $pink solid;
+    border-left: 10px $cyan solid;
+    border-right: 10px $pink solid;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    position: absolute;
+    animation: loader 500ms ease-in-out infinite;
+}
+
+.page {
+    background-color: white;
     margin: auto;
     width: 360px;
+    animation: page 3000ms ease;
+    position: relative;
 }
+
 
 h1 {
     font-family: $shrik;
@@ -102,6 +137,13 @@ nav {
         font-family: $robotolight;
         font-size: 0.9em;
         margin-top: 7%;
+        opacity: 1;
+        transform: opacity;
+        &:hover{
+            transition: opacity 300ms;
+            opacity: 0.6;
+            box-shadow: 2px 2px 2px grey;
+        }
     }
 }    
 
@@ -240,10 +282,10 @@ section {
                             color: pink;
                             opacity: 0;
                             transform: opacity;
-                            font-size: 1.05em;
+                            font-size: 1.1em;
                             &:hover{
-                                opacity: 0.8;
-                                transition: opacity 500ms;
+                                opacity: 0.9;
+                                transition: opacity 400ms;
                             } 
                         }
                   
@@ -335,18 +377,6 @@ section {
         .section__box{
             width: 60%;
             align-items: center;
-            // .section__box--txt{
-            //     .section__box--title{
-            //         margin: 0;
-            //         font-weight: bold;
-            //     }
-            //     .section__box--lieu{
-            //         margin: 0;
-            //     }
-            //     .section__box--i{
-            //     margin: 0;
-            //     }
-            // }
         }    
 }
 
@@ -472,181 +502,3 @@ footer{
     
 
 }
-
-
-// .loader {
-//     /* Load spinner sur la page Accueil */
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -webkit-box-pack: center;
-//         -ms-flex-pack: center;
-//             justify-content: center;
-//     -webkit-box-align: center;
-//         -ms-flex-align: center;
-//             align-items: center;
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//   }
-  
-//   .loader div {
-//     margin-top: 7em;
-//     font-size: 2em;
-//     font-weight: bold;
-//     color: #FF79DA;
-//     font-family: shrikhand;
-//     -webkit-animation: load 3s;
-//             animation: load 3s;
-//     -webkit-animation-fill-mode: both;
-//             animation-fill-mode: both;
-//     opacity: 0;
-//   }
-  
-//   @-webkit-keyframes load {
-//     1% {
-//       opacity: 1;
-//     }
-//     35% {
-//       color: #9356DC;
-//       -webkit-transform: scale(1.5);
-//               transform: scale(1.5);
-//     }
-//     65% {
-//       color: #99E2D0;
-//       -webkit-transform: scale(2);
-//               transform: scale(2);
-//     }
-//   }
-  
-//   @keyframes load {
-//     1% {
-//       opacity: 1;
-//     }
-//     35% {
-//       color: #9356DC;
-//       -webkit-transform: scale(1.5);
-//               transform: scale(1.5);
-//     }
-
-
-// Coeur modifié en scale
-
-// background-color: pink;
-// margin: auto;
-// font-size: 0.9em;
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// color: $pink;
-// background-color: transparent;
-// position: absolute;
-// transition: transform 300ms ease;
-// transform: scaleY(0);
-  
-// transform: scaleY(100%);
-
-
-// COEUR
-
-// .section__boxi{
-//     width: 15px;
-//     height: 15px;
-//     transform: rotate(45deg);
-//     background-color: pink;
-//     position: relative;
-// }
-// .section__boxi:before{
-//     position: absolute;
-//     border-radius: 50%;
-//     width: 15px;
-//     height: 15px;
-//     background-color: pink;
-//     bottom: 0;
-//     left: -50%;
-//     content: "";
-// }
-// .section__boxi:after{
-//     position: absolute;
-//     border-radius: 50%;
-//     width: 15px;
-//     height: 15px;
-//     background-color: pink;
-//     right: 0;
-//     top: -50%;
-//     content: "";
-// }
-
-// COEUR OC
-
-// .fa-heart {
-//     color: #FFF;
-//     background-color: #000;
-//     border-radius: 50%;
-//     padding:.2em;
-// }
-// .fa-heart::before {
-//     content: "\f004";
-//     font-weight: bold;
-//     transition: color 1s ease-out;
-// }
-// .fa-heart:hover::before{
-//     color: red;
-//     cursor: pointer;
-// }
-
-      // &::after{
-                        //     position: absolute;
-                        //     top: 0;
-                        //     right: 0;
-                        //     bottom: 0;
-                        //     left: 0;
-                        //     background-color:darken(pink, 5);
-                        //     opacity: 0;
-                        //     z-index: -1;
-                        //     transition: opacity 250ms;
-                        // }
-
-                //     i::before {
-                //     transition: color 1s ease-out;
-                    
-                // }
-                //     i:hover::after{
-                //     cursor: pointer;
-                //     color: red;
-                //     background-color: red;
-                //     position: absolute;
-                //     content: "";
-                // }
-
-                    // .section__boxi{
-                    //     width: 15px;
-                    //     height: 15px;
-                    //     transform: rotate(45deg);
-                    //     position: relative;
-                    //     border: 1px black solid;
-                    //     border-left: none;
-                    //     border-top: none;
-                    // }
-                    // .section__boxi:before{
-                    //     position: absolute;
-                    //     border-radius: 50%;
-                    //     width: 15px;
-                    //     height: 15px;
-                    //     bottom: 0;
-                    //     left: -50%;
-                    //     content: "";
-                    //     border: 1px black solid;
-                    // }
-                    // .section__boxi:after{
-                    //     position: absolute;
-                    //     border-radius: 50%;
-                    //     width: 15px;
-                    //     height: 15px;
-                    //     right: 0;
-                    //     top: -50%;
-                    //     content: "";
-                    //     border-bottom: none;
-                    //     border-left: none;
-                    //     border: 1px black solid;
-                    // }

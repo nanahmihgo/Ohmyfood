@@ -18,9 +18,45 @@
   font-family: "Roboto-Bold";
   src: url("./police/Roboto-Bold.ttf");
 }
-body {
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes page {
+  from {
+    transform: translateY(-9999px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 10px #99E2D0 solid;
+  border-bottom: 10px #FF79DA solid;
+  border-left: 10px #99E2D0 solid;
+  border-right: 10px #FF79DA solid;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  animation: loader 500ms ease-in-out infinite;
+}
+
+.page {
+  background-color: white;
   margin: auto;
   width: 360px;
+  animation: page 3000ms ease;
+  position: relative;
 }
 
 h1 {
@@ -80,6 +116,13 @@ nav .nav__link {
   font-family: "Roboto-Light";
   font-size: 0.9em;
   margin-top: 7%;
+  opacity: 1;
+  transform: opacity;
+}
+nav .nav__link:hover {
+  transition: opacity 300ms;
+  opacity: 0.6;
+  box-shadow: 2px 2px 2px grey;
 }
 
 aside {
@@ -221,11 +264,11 @@ section .section__box .section__boxtxt .section__boxheart .heartwrap .section__b
   color: pink;
   opacity: 0;
   transform: opacity;
-  font-size: 1.05em;
+  font-size: 1.1em;
 }
 section .section__box .section__boxtxt .section__boxheart .heartwrap .section__box--i:hover {
-  opacity: 0.8;
-  transition: opacity 500ms;
+  opacity: 0.9;
+  transition: opacity 400ms;
 }
 
 footer {

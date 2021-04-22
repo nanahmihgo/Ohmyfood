@@ -4,8 +4,10 @@
   "description": "\"Sass for P3\"",
   "main": "OhMyFood.js",
   "scripts": {
-    "sass": "sass --watch ./styleomf.scss:./styleomf.css"
+    "sass": "sass --watch ./styleomf.scss:./styleomf.css",
+    "prefix": "postcss ./p3/styleomf.css --use autoprefixer -d./p3/prefixed/"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "browserlist": "last 4 versions"
 }
