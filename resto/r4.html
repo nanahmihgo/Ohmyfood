@@ -12,79 +12,134 @@
  
     <body>
 
-        <header>
+        <header class="header__entete">
             <div class="header__content">
-                <a href="../OhMyFood.html" class="header__link"><i class="fas fa-arrow-left"></i></a>
+                <a href="../index.html" class="header__link"><i class="fas fa-arrow-left"></i></a>
                 <h1 class="header__title">ohmyfood</h1>
             </div>    
             <div class="header__img">
-                <img src="../imgR/deliceS.jpg" alt="le délice des sens"/>
+                <img src="../imgR/deliceS.jpg" alt="Le délice des sens"/>
             </div>
         </header>
     
-
         <section>
 
-            <div class="section__bigtitle">
+            <div class="section__restoname">
                 <h2>Le délice des sens</h2>
-                <a href="mesfavoris.doc" i class="far fa-heart"></i></a>
+                <div class="section__heart">
+                    <a href="mesfavoris.doc"><i class="far fa-heart"></i></a>
+                </div>    
             </div>
 
-            <h3 class="section__name">ENTREES</h3>
+            <div class="section__bloc">
+
+                <h3 class="section__names">ENTREES</h3>
 
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Tartare de thon</h4>
-                    <p>Assaisonné au yuzu<span class="prix">25€</span></p>
-                    <input type="checkbox" checked />
+                    <article class="txt">
+                        <h4>Tartare de thon</h4>
+                        <p>Assaisonné au yuzu</p>
+                    </article>
+                    <div class="prix">25€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form>
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Bouchée de homard croustillant</h4>
-                    <p>Et sa farandole de petits légumes<span class="prix">35€</span></p>
-                    <input type="checkbox" checked />
+                    <article class="txt">
+                        <h4>Bouchée de homard croustillant</h4>
+                        <p>Et sa farandole de petits légumes</p>
+                    </article>
+                    <div class="prix">35€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form>
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Velouté de cèpes</h4>
-                    <p>Aux truffes<span class="prix">20€</span></p>
-                    <input type="checkbox" checked />
+                    <article class="txt">
+                        <h4>Velouté de cèpes</h4>
+                        <p>Aux truffes</p>
+                    </article>
+                    <div class="prix">20€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form>
+            </div>
 
-            <h3 class="section__name">PLATS</h3>
+            <div class="section__bloc">
+
+                <h3 class="section__names">PLATS</h3>
 
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Poulet rôti aux herbes de Provence</h4>
-                    <p>Et sa crème de truffe<span class="prix">40€</span></p>
-                    <input type="checkbox" checked />
+                    <article class="txt">
+                        <h4>Poulet rôti aux herbes de Provence</h4>
+                        <p>Et sa crème de truffe</p>
+                    </article>
+                    <div class="prix">40€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form>
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Langouste rôtie</h4>
-                    <p>Et ses légumes de saison<span class="prix">35€</span></p>
-                    <input type="checkbox" checked />
+                    <div class="txt">
+                        <h4>Langouste rôtie</h4>
+                        <p>ÀEt ses légumes de saison</p>
+                    </div>
+                    <div class="prix">35€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form>
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Côte de boeuf Angus</h4>
-                    <p>Et sa purée de panais<span class="prix">44€</span></p>
-                    <input type="checkbox" checked />
+                    <article class="txt">
+                        <h4>Côte de boeuf Angus</h4>
+                        <p>Et sa purée de panais</p>
+                    </article>
+                    <div class="prix">44€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form>
+            </div>
+
+            <div class="section__bloc">
         
-            <h3 class="section__name">DESSERTS</h3>
+                <h3 class="section__names">DESSERTS</h3>
             
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Farandole de desserts</h4>
-                    <p>Du chef<span class="prix">18€</span></p>
-                    <input type="checkbox" checked />
+                    <article class="txt">
+                        <h4>Farandole de desserts</h4>
+                        <p>Du chef</p>
+                    </article>
+                    <div class="prix">18€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form> 
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Crème brulée</h4>
-                    <p>Revisitée<span class="prix">22€</span></p>
-                    <input type="checkbox" checked />
+                    <article class="txt">
+                        <h4>Crème brulée</h4>
+                        <p>Revisitée</p>
+                    </article>
+                    <div class="prix">22€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form>
                 <form method="post" class="section__boxes" action="doc.js">
-                    <h4>Tiramisu</h4>
-                    <p>À la noisette<span class="prix">23€</span></p>
-                    <input type="checkbox" checked />
+                    <article class="txt">
+                        <h4>Tiramisu</h4>
+                        <p>À la noisette</p>
+                    </article>
+                    <div class="prix">23€</div>
+                    <div class="section__btnbox">
+                        <button type="submit"><i class="fas fa-check"></i></button>
+                    </div>
                 </form>
+            </div>
                 
-                <form method="post" class="section__valid" action="doc.js">
+                <form method="post" class="section__btnsend" action="doc.js">
                     <input type="submit" class="section__submit" value="Commander"/>
                 </form>
 
