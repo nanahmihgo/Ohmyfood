@@ -2,10 +2,10 @@
   "name": "p3",
   "version": "1.0.0",
   "description": "\"Sass for P3\"",
-  "main": "OhMyFood.js",
+  "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./styleomf.scss:./styleomf.css",
-    "prefix": "postcss ./p3/styleomf.css --use autoprefixer -d./p3/prefixed/"
+    "prefix": "postcss ./styleomf.css --use autoprefixer -d./prefixed/"
   },
   "author": "",
   "license": "ISC",
