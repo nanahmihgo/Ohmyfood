@@ -1,27 +1,27 @@
 
 @font-face {
     font-family: 'Shrikhand-Regular';
-    src: url('../police/Shrikhand-Regular.ttf');
+    src: url('./police/Shrikhand-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url('../police/Roboto-Regular.ttf');
+    src: url('./police/Roboto-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Roboto-Black';
-    src: url('../police/Roboto-Black.ttf');
+    src: url('./police/Roboto-Black.ttf');
 }
 
 @font-face {
     font-family: 'Roboto-Light';
-    src: url('../police/Roboto-Light.ttf');
+    src: url('./police/Roboto-Light.ttf');
 }
 
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url('../police/Roboto-Bold.ttf');
+    src: url('./police/Roboto-Bold.ttf');
 }
 
 $roboto: 'Roboto-Regular';
@@ -96,7 +96,7 @@ section {
     margin-top: -15%;
     position: relative;
     overflow: hidden;
-    .section__restoname{
+    .section__restoname {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -106,39 +106,39 @@ section {
         font-size: 1.1em;
         padding-top: 0;
         margin-top: 7%;
-        .section__heart{
+        .section__heart {
             text-decoration: none;
             margin-right: 5%;
             transform: scale(0);
-                i{
+                i {
                     color: black;
                     font-size: 1.3em;
                 }
         }
-        &:focus{
-            .section__heart{
+        &:hover {
+            .section__heart {
                 transition: transform 300ms ease-in-out;
                 transform: scaleY(1);
                 transform-origin: bottom;
             }
         }
     }
-    .section__names{
-        width: 10%;
-        height: 25px;
-        margin-right: 80%;
-        margin-top: 7%;
-        margin-bottom: 1%;
-        font-family: $robotolight;
-        font-size: 0.9em;
-        border-bottom: 1px solid $cyan;
-    }
-    .section__bloc{
+    .section__bloc {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-            .section__boxes{
+        .section__names {
+            width: 10%;
+            height: 25px;
+            margin-right: 80%;
+            margin-top: 7%;
+            margin-bottom: 1%;
+            font-family: $robotolight;
+            font-size: 0.9em;
+            border-bottom: 1px solid $cyan;
+        }
+            .section__boxes {
                 font-family: $roboto;
                 margin-top: 3%;
                 padding: 0;
@@ -152,27 +152,27 @@ section {
                 border-radius: 15px;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                &:nth-child(2){
+                &:nth-child(2) {
                     animation: menu 400ms ease-in-out;
                 }
-                &:nth-child(3){
+                &:nth-child(3) {
                     animation: menu 700ms ease-in-out;
                 }
-                &:nth-child(4){
+                &:nth-child(4) {
                     animation: menu 1000ms ease-in-out;
                 }
-                    .txt{
+                    .txt {
                         flex: 1;
                         white-space: nowrap;
                         margin: 0 0 2% 5%;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                            h4{
+                            h4 {
                             margin: 0;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             }
-                            p{
+                            p {
                             width: 85%;
                             height: 20px;
                             margin: 0;
@@ -182,7 +182,7 @@ section {
                             text-overflow: ellipsis;
                             }
                     }
-                    .prix{
+                    .prix {
                         font-weight: bold;
                         font-size: 0.9em;
                         margin: 0 0 2.5% 0;
@@ -198,7 +198,10 @@ section {
                         transition: transform 300ms ease-in-out;
                         transform: scaleX(0);
                         transform-origin: right;
-                            button{
+                        -webkit-transition: transform 300ms ease-in-out;
+                        -webkit-transform: scaleX(0);
+                        -webkit-transform-origin: right;
+                            button { 
                                 height: 1.4em;
                                 width: 1.4em;
                                 border: none;
@@ -210,27 +213,31 @@ section {
                                 justify-content: center;
                                 transform: rotate(0);
                                 transition: transform 300ms ease-in-out;
+                                -webkit-transform: rotate(0);
+                                -webkit-transition: transform 300ms ease-in-out;
                             }
                     }
-                    &:hover{
-                        .prix{
+                    &:hover {
+                        .prix {
                             transform: translate(-100%, 0);
                         }
                         .section__btnbox {
                             width: 17%;
-                            transform: scaleX(100%);
+                            transform: scaleX(1);
+                            -webkit-transform: scaleX(1);
                             cursor: pointer;
-                                button{
+                                button { 
                                     transform: rotate(360deg);
+                                    -webkit-transform: rotate(360deg);
                                     cursor: pointer;
                                 }
                         }
                     }
             }
     }
-    .section__btnsend{
+    .section__btnsend {
         width: 50%;
-            .section__submit{
+            .section__submit {
                 width: 100%;
                 height: 50px;
                 background-color: $pink;
@@ -250,12 +257,12 @@ section {
 }
 
 
-footer{
+footer {
     width: 100%;
     height: 200px;
     text-align: start;
     background-color: black;
-    .footer__link{
+    .footer__link {
         color: white;
         width: 90%;
         height: 165px;
@@ -266,22 +273,22 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        .footer__link--title{
+        .footer__link--title {
             font-family: $shrik;
             font-size: 1.1em;
             margin-top: 6%;
             margin-bottom: 3%;
         }
-        .footer__link--content{
+        .footer__link--content {
             font-family: $robotolight;
             color: white;
             text-decoration: none;
             width: 90%;
-            .footer__link--1{
+            .footer__link--1 {
                 margin-right: 6%;
                 padding-left: 1%;
             }
-            .footer__link--2{
+            .footer__link--2 {
                 margin-right: 5%;
             }
         }          
@@ -292,7 +299,7 @@ footer{
 @media all and (min-width: 600px) and (max-width: 1024px)
 {
 
-body{
+body {
     margin: auto;
     min-width: 600px;
     max-width: 1024px;
@@ -311,15 +318,15 @@ body{
 section {
     height: 1130px;
     margin-top: -25%;
-    .section__bloc{
+    .section__bloc {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 80%;
-        .section__boxes{
+        .section__boxes {
             width: 90%;
             height: 60px;
-                .txt{
+                .txt {
                     margin: 0 0 0 5%;
                         p{
                         margin-bottom: 1%;
@@ -328,7 +335,7 @@ section {
                 }
         }
     }    
-    .section__btnsend{
+    .section__btnsend {
         width: 35%;
         margin-top: 5%;
     }    
@@ -339,7 +346,7 @@ section {
 @media all and (min-width: 1024px) and (max-width: 1980px)
 {
 
-body{
+body {
     min-width: 1024px;
     max-width: 1980px;
     @include bgcolor;
@@ -352,7 +359,7 @@ body{
         justify-content: space-between;
         margin: 0 0 0 2%;
     }       
-    .header__img{
+    .header__img {
         width: 100%;
         height: 500px;
     }
@@ -364,21 +371,21 @@ section {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    .section__restoname{
+    .section__restoname {
         margin: 3% 0 0 0;
     }
-    .section__bloc{
+    .section__bloc {
         width: 30%;
-        .section__boxes{
-                &:hover{
-                    .prix{
+        .section__boxes {
+                &:hover {
+                    .prix {
                         transform: translate(-100%, 0);
                     }
                     .section__btnbox {
                         width: 21%;
                         transform: scaleX(100%);
                         cursor: pointer;
-                            button{
+                            button {
                                 transform: rotate(360deg);
                                 cursor: pointer;
                             }
@@ -386,9 +393,9 @@ section {
                 }
         }
     }
-    .section__btnsend{
+    .section__btnsend {
         width: 20%;
-            .section__submit{
+            .section__submit {
                 font-family: $shrik;
                 font-size: 1.3em;
             }
@@ -396,12 +403,12 @@ section {
 }
 
 
-footer{
-    .footer__link{
+footer {
+    .footer__link {
         width: 20%;
         margin: 0 0 0 5%;
         padding: 1% 0 0 0;
-        .footer__link--title{
+        .footer__link--title {
             font-size: 1.3em;
         }
     }

@@ -1,13 +1,13 @@
 {
   "name": "p3",
   "version": "1.0.0",
-  "description": "\"Sass for P3\"",
+  "description": "Sass for P3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./styleomf.scss:./styleomf.css",
-    "prefix": "postcss ./styleomf.css --use autoprefixer -d./prefixed/"
+    "sass": "sass --watch ./sass:./styleomf",
+    "prefix": "postcss ./styleomf/*.css --use autoprefixer -d ./prefixed/"
   },
   "author": "",
   "license": "ISC",
-  "browserlist": "last 4 versions"
+  "browserslist": "last 4 versions"
 }

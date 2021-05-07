@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Shrikhand-Regular";
-  src: url("../police/Shrikhand-Regular.ttf");
+  src: url("./police/Shrikhand-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../police/Roboto-Regular.ttf");
+  src: url("./police/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto-Black";
-  src: url("../police/Roboto-Black.ttf");
+  src: url("./police/Roboto-Black.ttf");
 }
 @font-face {
   font-family: "Roboto-Light";
-  src: url("../police/Roboto-Light.ttf");
+  src: url("./police/Roboto-Light.ttf");
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("../police/Roboto-Bold.ttf");
+  src: url("./police/Roboto-Bold.ttf");
 }
 @keyframes menu {
   from {
@@ -97,12 +97,18 @@ section .section__restoname .section__heart i {
   color: black;
   font-size: 1.3em;
 }
-section .section__restoname:focus .section__heart {
+section .section__restoname:hover .section__heart {
   transition: transform 300ms ease-in-out;
   transform: scaleY(1);
   transform-origin: bottom;
 }
-section .section__names {
+section .section__bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+section .section__bloc .section__names {
   width: 10%;
   height: 25px;
   margin-right: 80%;
@@ -111,12 +117,6 @@ section .section__names {
   font-family: "Roboto-Light";
   font-size: 0.9em;
   border-bottom: 1px solid #99E2D0;
-}
-section .section__bloc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 section .section__bloc .section__boxes {
   font-family: "Roboto-Regular";
@@ -179,6 +179,9 @@ section .section__bloc .section__boxes .section__btnbox {
   transition: transform 300ms ease-in-out;
   transform: scaleX(0);
   transform-origin: right;
+  -webkit-transition: transform 300ms ease-in-out;
+  -webkit-transform: scaleX(0);
+  -webkit-transform-origin: right;
 }
 section .section__bloc .section__boxes .section__btnbox button {
   height: 1.4em;
@@ -192,17 +195,21 @@ section .section__bloc .section__boxes .section__btnbox button {
   justify-content: center;
   transform: rotate(0);
   transition: transform 300ms ease-in-out;
+  -webkit-transform: rotate(0);
+  -webkit-transition: transform 300ms ease-in-out;
 }
 section .section__bloc .section__boxes:hover .prix {
   transform: translate(-100%, 0);
 }
 section .section__bloc .section__boxes:hover .section__btnbox {
   width: 17%;
-  transform: scaleX(100%);
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
   cursor: pointer;
 }
 section .section__bloc .section__boxes:hover .section__btnbox button {
   transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
   cursor: pointer;
 }
 section .section__btnsend {

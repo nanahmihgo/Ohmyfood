@@ -279,7 +279,7 @@ section .section__box .section__boxtxt .section__boxheart .heartwrap .section__b
   color: pink;
   opacity: 0;
   transform: opacity;
-  font-size: 1.1em;
+  font-size: 1.05em;
 }
 section .section__box .section__boxtxt .section__boxheart .heartwrap .section__box--i:hover {
   opacity: 0.9;
