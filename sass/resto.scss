@@ -106,20 +106,40 @@ section {
         font-size: 1.1em;
         padding-top: 0;
         margin-top: 7%;
-        .section__heart {
-            text-decoration: none;
-            margin-right: 5%;
-            transform: scale(0);
+    .section__heart {
+        width: 1%;
+        height: 21%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: 0 solid transparent;
+        background-color: transparent;
+        font-size: 1.5em;
+        cursor: pointer;
+            .heartwrap {
+                width: 25px;
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 i {
-                    color: black;
-                    font-size: 1.3em;
+                    position: relative;
+                    background-color: transparent;
+                    font-size: 1em;
+                } 
+                .section__box--i {
+                    position: absolute;
+                    color: pink;
+                    opacity: 0;
+                    font-size: 1.05em;
+                    &:hover {
+                        opacity: 0.9;
+                        transition: opacity 400ms;
+                    } 
                 }
-        }
-        &:hover {
-            .section__heart {
-                transition: transform 300ms ease-in-out;
-                transform: scaleY(1);
-                transform-origin: bottom;
+          
             }
         }
     }

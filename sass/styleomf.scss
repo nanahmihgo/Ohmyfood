@@ -136,7 +136,6 @@ nav {
         font-size: 0.9em;
         margin-top: 7%;
         opacity: 1;
-        transform: opacity;
         &:hover {
             transition: opacity 300ms;
             opacity: 0.6;
@@ -296,7 +295,6 @@ section {
                             position: absolute;
                             color: pink;
                             opacity: 0;
-                            transform: opacity;
                             font-size: 1.05em;
                             &:hover {
                                 opacity: 0.9;

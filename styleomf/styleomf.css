@@ -115,7 +115,6 @@ nav .nav__link {
   font-size: 0.9em;
   margin-top: 7%;
   opacity: 1;
-  transform: opacity;
 }
 nav .nav__link:hover {
   transition: opacity 300ms;
@@ -278,7 +277,6 @@ section .section__box .section__boxtxt .section__boxheart .heartwrap .section__b
   position: absolute;
   color: pink;
   opacity: 0;
-  transform: opacity;
   font-size: 1.05em;
 }
 section .section__box .section__boxtxt .section__boxheart .heartwrap .section__box--i:hover {
