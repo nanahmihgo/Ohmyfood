@@ -197,7 +197,7 @@ section .section__bigtitle {
 section .section__box {
   margin-top: 5%;
   width: 90%;
-  height: 240px;
+  height: 230px;
   background-color: white;
   display: flex;
   flex-direction: column;
