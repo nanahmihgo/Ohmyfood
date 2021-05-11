@@ -1,0 +1,36 @@
+.section__boxheart {
+    width: 1%;
+    height: 21%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 0 solid transparent;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+        .heartwrap {
+            width: 25px;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                position: relative;
+                background-color: transparent;
+                font-size: 1em;
+            } 
+            .section__box--i {
+                position: absolute;
+                color: pink;
+                opacity: 0;
+                font-size: 1.05em;
+                &:hover {
+                    opacity: 0.9;
+                    transition: opacity 400ms;
+                } 
+            }
+      
+        }
+}

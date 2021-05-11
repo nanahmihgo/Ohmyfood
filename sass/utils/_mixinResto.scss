@@ -1,0 +1,3 @@
+@mixin bgcolor ($color: $cyan){
+    background-color: lighten($cyan, 20%);
+}

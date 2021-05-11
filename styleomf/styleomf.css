@@ -57,6 +57,42 @@
   position: relative;
 }
 
+.section__boxheart {
+  width: 1%;
+  height: 21%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 0 solid transparent;
+  background-color: transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.section__boxheart .heartwrap {
+  width: 25px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__boxheart .heartwrap i {
+  position: relative;
+  background-color: transparent;
+  font-size: 1em;
+}
+.section__boxheart .heartwrap .section__box--i {
+  position: absolute;
+  color: pink;
+  opacity: 0;
+  font-size: 1.05em;
+}
+.section__boxheart .heartwrap .section__box--i:hover {
+  opacity: 0.9;
+  transition: opacity 400ms;
+}
+
 h1 {
   font-family: "Shrikhand-Regular";
   font-size: 1.6em;
@@ -247,41 +283,6 @@ section .section__box .section__boxtxt .section__boxtitle {
 }
 section .section__box .section__boxtxt .section__boxlieu {
   margin: 0;
-}
-section .section__box .section__boxtxt .section__boxheart {
-  width: 1%;
-  height: 21%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  border: 0 solid transparent;
-  background-color: transparent;
-  font-size: 1.5em;
-  cursor: pointer;
-}
-section .section__box .section__boxtxt .section__boxheart .heartwrap {
-  width: 25px;
-  height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section .section__box .section__boxtxt .section__boxheart .heartwrap i {
-  position: relative;
-  background-color: transparent;
-  font-size: 1em;
-}
-section .section__box .section__boxtxt .section__boxheart .heartwrap .section__box--i {
-  position: absolute;
-  color: pink;
-  opacity: 0;
-  font-size: 1.05em;
-}
-section .section__box .section__boxtxt .section__boxheart .heartwrap .section__box--i:hover {
-  opacity: 0.9;
-  transition: opacity 400ms;
 }
 
 footer {
