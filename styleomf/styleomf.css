@@ -273,7 +273,7 @@ section .section__box .section__boxtxt {
   align-content: space-between;
   flex-wrap: wrap;
   width: 90%;
-  height: 20%;
+  height: 40px;
   margin: auto;
   font-family: "Roboto-Regular";
 }
