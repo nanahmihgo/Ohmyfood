@@ -132,9 +132,6 @@ section {
                         transition: transform 300ms ease-in-out;
                         transform: scaleX(0);
                         transform-origin: right;
-                        -webkit-transition: transform 300ms ease-in-out;
-                        -webkit-transform: scaleX(0);
-                        -webkit-transform-origin: right;
                             button { 
                                 height: 1.4em;
                                 width: 1.4em;
@@ -147,8 +144,6 @@ section {
                                 justify-content: center;
                                 transform: rotate(0);
                                 transition: transform 300ms ease-in-out;
-                                -webkit-transform: rotate(0);
-                                -webkit-transition: transform 300ms ease-in-out;
                             }
                     }
                     &:hover {
@@ -158,11 +153,9 @@ section {
                         .section__btnbox {
                             width: 17%;
                             transform: scaleX(1);
-                            -webkit-transform: scaleX(1);
                             cursor: pointer;
                                 button { 
                                     transform: rotate(360deg);
-                                    -webkit-transform: rotate(360deg);
                                     cursor: pointer;
                                 }
                         }

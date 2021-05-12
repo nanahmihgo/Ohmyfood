@@ -4,8 +4,8 @@
   "description": "Sass for P3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass:./styleomf",
-    "prefix": "postcss ./styleomf/*.css --use autoprefixer -d ./prefixed/"
+    "sass": "sass --watch ./sass:./css",
+    "prefix": "postcss ./css/*.css --use autoprefixer -d ./prefixed/"
   },
   "author": "",
   "license": "ISC",

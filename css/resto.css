@@ -29,15 +29,6 @@
   }
 }
 .section__heart {
-  width: 1%;
-  height: 21%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  border: 0 solid transparent;
-  background-color: transparent;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -201,9 +192,6 @@ section .section__bloc .section__boxes .section__btnbox {
   transition: transform 300ms ease-in-out;
   transform: scaleX(0);
   transform-origin: right;
-  -webkit-transition: transform 300ms ease-in-out;
-  -webkit-transform: scaleX(0);
-  -webkit-transform-origin: right;
 }
 section .section__bloc .section__boxes .section__btnbox button {
   height: 1.4em;
@@ -217,8 +205,6 @@ section .section__bloc .section__boxes .section__btnbox button {
   justify-content: center;
   transform: rotate(0);
   transition: transform 300ms ease-in-out;
-  -webkit-transform: rotate(0);
-  -webkit-transition: transform 300ms ease-in-out;
 }
 section .section__bloc .section__boxes:hover .prix {
   transform: translate(-100%, 0);
@@ -226,12 +212,10 @@ section .section__bloc .section__boxes:hover .prix {
 section .section__bloc .section__boxes:hover .section__btnbox {
   width: 17%;
   transform: scaleX(1);
-  -webkit-transform: scaleX(1);
   cursor: pointer;
 }
 section .section__bloc .section__boxes:hover .section__btnbox button {
   transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
   cursor: pointer;
 }
 section .section__btnsend {
