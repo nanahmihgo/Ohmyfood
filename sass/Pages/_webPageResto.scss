@@ -37,7 +37,7 @@ body {
 section {
     width: 100%;
     height: 1050px;
-    @include bgcolor;
+    background-color: rgb(246, 246, 246);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -125,7 +125,7 @@ section {
                     .section__btnbox {
                         height: 100%;
                         border-radius: 0 15px 15px 0;
-                        background-color: $cyan;
+                        background-color: rgb(153, 226, 208);
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -138,7 +138,7 @@ section {
                                 border: none;
                                 border-radius: 20px;
                                 background-color: white;
-                                color: $cyan;
+                                color: rgb(153, 226, 208);
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -167,16 +167,18 @@ section {
             .section__submit {
                 width: 100%;
                 height: 50px;
-                background-color: $pink;
+                background: linear-gradient(to right,rgb(227, 112, 218), rgb(147, 86, 220));
                 color: white;
-                border: 1px solid $pink;
+                border: 1px solid rgb(227, 112, 218);
                 border-radius: 30px;
                 font-family: $roboto;
                 margin-top: 25%;
+                opacity: 0.9;
                 transition: background-color 200ms ease-out;
                 &:hover {
-                    background-color: #f8a4e3;
-                    border: #f8a4e3;
+                    transition: opacity 300ms;
+                    opacity: 0.6;
+                    box-shadow: 2px 2px 2px grey;
                     cursor: pointer;
                 }
             }
@@ -188,7 +190,7 @@ footer {
     width: 100%;
     height: 200px;
     text-align: start;
-    background-color: black;
+    background-color: rgb(53, 53, 53);
     .footer__link {
         color: white;
         width: 90%;
@@ -276,7 +278,6 @@ section {
 body {
     min-width: 1024px;
     max-width: 1980px;
-    @include bgcolor;
 }
 
 .header__entete {

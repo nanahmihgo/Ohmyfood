@@ -14,11 +14,11 @@
             } 
             .section__box--i {
                 position: absolute;
-                color: pink;
+                color: rgb(147, 86, 220);
                 opacity: 0;
-                font-size: 1.05em;
+                font-size: 1em;
                 &:hover {
-                    opacity: 0.9;
+                    opacity: 1;
                     transition: opacity 400ms;
                 } 
             }
